@@ -1,0 +1,50 @@
+# Root level patterns
+.DS_Store
+Thumbs.db
+node_modules/
+.pnpm-store/
+.pnpm/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Frontend specific
+asset-library-frontend/.next
+asset-library-frontend/out
+asset-library-frontend/build
+asset-library-frontend/coverage
+asset-library-frontend/.jest
+asset-library-frontend/.storybook/mockStore.ts
+
+# Backend specific
+asset-library-backend/coverage
+asset-library-backend/lib-cov
+asset-library-backend/.nyc_output
+asset-library-backend/supabase/
+!asset-library-backend/supabase/seed.sql
+!asset-library-backend/supabase/migrations/
+!asset-library-backend/supabase/migrations/**
+!asset-library-backend/supabase/config.toml.template
+
+# TypeScript
+*.tsbuildinfo
+
+# Package manager specific
+package-lock.json
+yarn.lock
+pnpm-lock.yaml 
